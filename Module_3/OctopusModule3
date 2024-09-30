@@ -1,0 +1,16 @@
+using System;
+
+public class Octopus {
+    public string Name { get; }
+    public int Legs = 8;
+    public Octopus(string InputName) {
+        Name = InputName;
+    }
+}
+
+class Homework{
+    static void Main(string[] args) {
+        Octopus octopus = new Octopus("James");
+        Console.WriteLine($"This octopus has {octopus.Legs} legs and their name is {octopus.Name}.");
+    }
+}
