@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Project10
 {
@@ -6,5 +6,11 @@ namespace Project10
     {
         public int shift;
         public double payrate;
+        public Subcontractor(string name, int number, DateTime startdate, int shift, double payrate): base(name, number, startdate)
+        {
+            this.shift = shift;
+            this.payrate = payrate;
+        }
+
     }
 }
