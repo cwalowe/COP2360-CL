@@ -8,6 +8,7 @@ namespace Project10
 
         static void Main(string[] args)
         {
+            while (true){
             Console.WriteLine("Enter contractor name.");
             string userName = Console.ReadLine();
             Console.WriteLine("Enter contractor number.");
@@ -31,7 +32,14 @@ namespace Project10
             }
             double payroll = PayrollCalc(payrate, shift, start);
             Console.WriteLine($"{userName} earned ${payroll:F2} in this pay period.");
-            
+            //prompt the user to loop the program for another instance
+                Console.WriteLine("Do you want to enter another contractor? (y/n)");
+                string continueInput = Console.ReadLine();
+                if (continueInput.ToLower() != "y")
+                {
+                    break;
+                }
+        }
         }
 
 
